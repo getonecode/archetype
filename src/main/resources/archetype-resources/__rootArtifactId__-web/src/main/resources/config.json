@@ -1,0 +1,35 @@
+{
+  "dev": {
+    "env":"dev",
+    "usePageAuth":false,
+    "pageAuthFailUrl":"/login",
+    "http.port": 8001,
+    "instance.biz.count":3,
+    "template.dir": "/Users/well/code-liangmu/${parentArtifactId}/app/templates/",
+    "assets.dir": "/Users/well/code-liangmu/${parentArtifactId}/app/assets/",
+    "action.package": "${package}.web.action",
+    "biz.package": "${package}.biz",
+    "server":{
+       "homeServer":"http://localhost:8001",
+       "staticServer":"http://localhost:8001/static"
+    },
+    "db": {
+      "environment.id": "dev"
+    },
+    "sys": {
+      "webdemoaz.logger.dir": "/Users/well/logs",
+      "webdemoaz.logger.level": "debug"
+    },
+    "cookie":{
+      "domain":"",
+      "path":"/",
+      "maxAge":3600,
+      "secure":false,
+      "httpOnly":true,
+      "sessionKey":"${parentArtifactId}_01",
+      "checkKey":"${parentArtifactId}_02",
+      "encryptSalt":"${parentArtifactId}"
+    }
+  }
+}
+
